@@ -5,7 +5,7 @@ int main()
 {
 
 int hana,secim=0 ,kazanma=0 ,kaybetme=0 ,beraberlik=0;
-/* tas=0 kagit=1 makas=2 */
+
 
 
 while(secim!=4)
