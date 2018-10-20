@@ -3,12 +3,17 @@
 #include<time.h>
 int main()
 {
-printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kagit=2,makas=3). Bu arada Hana kim?\n ");
-int hana,secim;
+
+int hana,secim=0;
 srand(time(NULL));
 hana=rand()%2;/* tas=0 kagit=1 makas=2 */
 
-scanf("%d",&secim);
+
+while(secim!=4)
+{
+printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kagit=2,makas=3,bitirmek icin 4 ). Bu arada Hana kim?\n ");	
+scanf("%d",&secim);	
+	
 	if(hana==0) /*tas*/
 {
 	if(secim==1)
@@ -38,6 +43,7 @@ if(hana==2) /*makas*/
 	printf("Hana makas secti. Kaybol yenildin.\n");	
 	if(secim==3)
 	printf("Hana tas secti. Berabere kaldin.\n");	
+}
 }
 printf("Oyun Bitti\n");
 return 0;	
