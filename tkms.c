@@ -13,7 +13,8 @@ while(secim!=4)
 printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kagit=2,makas=3,bitirmek icin 4 ). Bu arada Hana kim?\n ");	
 scanf("%d",&secim);	
 srand(time(NULL));
-hana=1+rand()%3;	/* tas=1 kagit=2 makas=3 */
+hana=rand()%999;	/* tas=1 kagit=2 makas=3 */
+hana=(hana%3)+1;
 	if(hana==1) /*tas*/
 {
 	if(secim==1)
