@@ -1,2 +1,2 @@
-# Tas-ka-t-Makas-C
+# Tas-kagit-Makas-C
 C dilinde yazılmış taş kağıt makas robotu
