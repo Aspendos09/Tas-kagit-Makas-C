@@ -4,9 +4,9 @@
 int main()
 {
 
-int hana,secim=0 ,kazanma=0 ,kaybetme=0 ,beraberlik=0;
+int hana,secim=0 ,kazanma=0 ,kaybetme=0 ,beraberlik=0,skor=0;
 
-
+/* kazanma 3 puan beraberlik 1 kaybetme -2 puan */
 
 while(secim!=4)
 {
@@ -14,6 +14,8 @@ printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kag
 scanf("%d",&secim);	
 srand(time(NULL));
 FILE *f = fopen("kayit.txt" , "w");
+printf("\n");
+
 
 if(f == NULL){
 	printf("Kayit dosyasi bulunamadi!\n");
@@ -28,20 +30,20 @@ hana=(hana%3)+1;
 	{
 		printf("Hana tas secti. Berabere kaldin.\n");	
 		beraberlik+=1;
-	
+		skor+=1;
 	
 	}
 	if(secim==2)
 	{	
 		printf("Hana tas secti. Helal reyiz kazandin.\n");
 		kazanma+=1;
-		
+		skor+=3;
 	}	
 	if(secim==3)
 	{	
 		printf("Hana tas secti. Kaybol yenildin.\n");
 		kaybetme+=1;
-		
+		skor-=2;
 	}
 
 }	
@@ -51,17 +53,19 @@ if(hana==2) /*kagit*/
 	{	
 		printf("Hana kagit secti. Kaybol yenildin.\n");	
 		kaybetme+=1;
-				
+		skor-=2;		
 	}
 	if(secim==2)
 	{	
 		printf("Hana kagit secti. Berabere kaldin.\n");	
 		beraberlik+=1;
+		skor+=1;
 	}
 	if(secim==3)
 	{
 		printf("Hana kagit secti. Helal reyiz kazandin.\n" );	 
 		kazanma+=1;
+		skor+=3;
 		
 	}
 }	
@@ -71,20 +75,24 @@ if(hana==3) /*makas*/
 	{	
 		printf("Hana makas secti. Helal reyiz kazandin.\n");	
 		kazanma+=1;
+		skor+=3;
 		
 	}
 	if(secim==2)
 	{	
 		printf("Hana makas secti. Kaybol yenildin.\n");	
 		kaybetme+=1;
+		skor-=2;
 	
 	}	
 	if(secim==3)
 	{	
 	printf("Hana tas secti. Berabere kaldin.\n");
 	beraberlik+=1;
+	skor+=1;
 	}
-}	
+}
+printf("Skorun : %d \n",skor);	
 printf("\n");
 printf("Kazanma sayisi = %d ",kazanma);
 	fprintf(f, "Kazanma: %d\n", kazanma);
