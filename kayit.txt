@@ -1,0 +1,3 @@
+Kazanma: 8
+Kaybetme: 2
+Beraberlik: 0
