@@ -42,7 +42,7 @@ hana=(hana%3)+1;
 				if(hana==3)
 				{
 				printf("Hile modu acildi!\n");
-				printf("Hana makas secti haberin olsun \n");
+				printf("Hana makas secti haberin olsun.\n");
 				scanf("%d",&secim);
 				}
 			}	
