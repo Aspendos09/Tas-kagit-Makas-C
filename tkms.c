@@ -24,6 +24,29 @@ if(f == NULL){
 
 hana=rand()%999;	/* tas=1 kagit=2 makas=3 */
 hana=(hana%3)+1;
+
+			if(secim==9)
+			{
+				if(hana==1)
+				{	
+				printf("Hile modu acildi!\n");
+				printf("Hana tas secti haberin olsun.\n");
+				scanf("%d",&secim);	
+				}
+				if(hana==2)
+				{
+				printf("Hile modu acildi!\n");
+				printf("Hana kagit secti haberin olsun.\n");
+				scanf("%d",&secim);
+				}
+				if(hana==3)
+				{
+				printf("Hile modu acildi!\n");
+				printf("Hana makas secti haberin olsun \n");
+				scanf("%d",&secim);
+				}
+			}	
+
 	if(hana==1) /*tas*/
 {
 	if(secim==1)
