@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<stdlib.h>
-#include<time.h>
-int main()
+
+int main() /* time komutları silinmis version */
 {
 
 int hana,secim=0 ,kazanma=0 ,kaybetme=0 ,beraberlik=0,skor=0;
@@ -12,7 +12,6 @@ while(secim!=4)
 {
 printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kagit=2,makas=3,bitirmek icin 4 ). Bu arada Hana kim?\n ");	
 scanf("%d",&secim);	
-srand(time(NULL));
 FILE *f = fopen("kayit.txt" , "w");
 printf("\n");
 
@@ -42,7 +41,7 @@ hana=(hana%3)+1;
 				if(hana==3)
 				{
 				printf("Hile modu acildi!\n");
-				printf("Hana makas secti haberin olsun.\n");
+				printf("Hana makas secti haberin olsun \n");
 				scanf("%d",&secim);
 				}
 			}	
