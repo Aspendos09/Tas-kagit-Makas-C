@@ -1,14 +1,15 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 
 int main() /* time komutları silinmis version */
 {
-
+/*
 int hana,secim=0 ,kazanma=0 ,kaybetme=0 ,beraberlik=0,skor=0;
 
 /* kazanma 3 puan beraberlik 1 kaybetme -2 puan */
 
-while(secim!=4)
+/*while(secim!=4)
 {
 printf("Tas Kagit Makas oyununa hos geldiniz. Lutfen hamlenizi seciniz(tas=1,kagit=2,makas=3,bitirmek icin 4 ). Bu arada Hana kim?\n ");	
 scanf("%d",&secim);	
@@ -22,7 +23,7 @@ if(f == NULL){
 }
 
 hana=rand()%999;	/* tas=1 kagit=2 makas=3 */
-hana=(hana%3)+1;
+/*hana=(hana%3)+1;
 
 			if(secim==9)
 			{
@@ -47,7 +48,7 @@ hana=(hana%3)+1;
 			}	
 
 	if(hana==1) /*tas*/
-{
+/*{
 	if(secim==1)
 	{
 		printf("Hana tas secti. Berabere kaldin.\n");	
@@ -70,7 +71,7 @@ hana=(hana%3)+1;
 
 }	
 if(hana==2) /*kagit*/
-{
+/*{
 	if(secim==1)
 	{	
 		printf("Hana kagit secti. Kaybol yenildin.\n");	
@@ -92,7 +93,7 @@ if(hana==2) /*kagit*/
 	}
 }	
 if(hana==3) /*makas*/
-{
+/*{
 	if(secim==1)
 	{	
 		printf("Hana makas secti. Helal reyiz kazandin.\n");	
@@ -127,5 +128,6 @@ fprintf(f, "Beraberlik: %d\n", beraberlik);
 
 printf("\n");
 printf("Oyun Bitti\n");
-return 0;	
+return 0;
+	*/
 }	
