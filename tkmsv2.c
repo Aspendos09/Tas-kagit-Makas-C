@@ -1,3 +1,4 @@
+/* Older version
 //Taş kağıt makas versiyon 2
 #ifdef _WIN32
 #include <Windows.h>
@@ -166,3 +167,4 @@ void sonuclar(void)
   printf("Alinan hasar: %d \n",yenilgi);
   printf("Kazanilan tecrube: %d \n",skor);
 }
+*/
